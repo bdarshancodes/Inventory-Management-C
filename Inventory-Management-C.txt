@@ -1,0 +1,49 @@
+Inventory-Management-C
+#include<stdio.h>
+void main(){
+int total_paper=15;
+int total_ribbon=78;
+int total_label=41;
+int ribbon_order;
+int paper_order;
+int label_order;
+char inv;
+printf("please press 'B','C' for ribbon\n");
+printf("Please press 'E','F','D' for label\n");
+printf("Please press 'A','X' for paper\n"); 
+printf("please enter your choice..\n");
+scanf("%c",&inv);
+
+switch (inv)
+{
+case 'B':
+case 'C':
+    printf("enter  ribbon order value: \n");
+    scanf("%d",&ribbon_order);
+    total_ribbon=total_ribbon+ribbon_order;
+    printf("Total riibon is :%d",total_ribbon);
+    break;
+
+case 'E':
+case 'F':
+case 'D':
+    printf("enter  label order value: \n");
+    scanf("%d",&label_order);
+    total_label=total_label+label_order;
+    printf("Total label is :%d",total_label);
+    break;
+
+case 'A':
+case 'X':
+    printf("enter  paper order value: \n");
+    scanf("%d",&paper_order);
+    total_paper=total_paper+paper_order;
+    printf("Total paper is :%d",total_paper);
+    break;
+case 'M':
+    break;
+default:
+    printf("please enter valid choice!\n");
+    break;
+}
+}
