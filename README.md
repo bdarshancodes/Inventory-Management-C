@@ -69,4 +69,4 @@ gcc inventory.c -o inventory
 
 ## Author
 
-Darshan B
+bdarshancodes
