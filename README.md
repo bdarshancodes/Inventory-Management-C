@@ -66,7 +66,6 @@ gcc inventory.c -o inventory
 * Add stock deduction (for sales).
 * Add menu loop for multiple orders.
 
----
 
 ## Author
 
